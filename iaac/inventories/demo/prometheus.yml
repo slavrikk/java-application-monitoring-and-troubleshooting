@@ -11,4 +11,4 @@ scrape_configs:
 - job_name: 'app'
   metrics_path: '/dbo/actuator/prometheus'
   static_configs:
-  - targets: ["app:8080"]
+  - targets: ["host.docker.internal:8080"]
