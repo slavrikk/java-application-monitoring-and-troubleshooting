@@ -26,21 +26,28 @@ Installation at Windows:
 
 - [ ] [AdoptOpenJDK](https://adoptopenjdk.net) OpenJDK 8 HotSpot Latest Release
 Installation at Windows:
-1. Download distribution: preffered Windows Installer at corporate repo (`softwarecenter:SoftwareID=ScopeId_1999C8B9-1E4A-4832-84B4-AAC87980BDC9/Application_c0cf2d23-58dd-4798-a91c-696b82180ff3`) or fallback [Windows installer at official website](https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u262-b10/OpenJDK8U-jdk_x86-32_windows_hotspot_8u262b10.msi) 
+1. Download distribution: preffered Windows Installer at corporate repo (`softwarecenter:SoftwareID=ScopeId_1999C8B9-1E4A-4832-84B4-AAC87980BDC9/Application_ec47efb0-71ec-4f0d-a374-05df14c3ae65`) or fallback [Windows installer at official website](https://adoptium.net/temurin/releases/?version=8&os=windows&arch=x64&package=jdk) 
 1. Run distribution
 1. All installation questions and options leave as default 
 
 - [ ] [VisualVM](https://visualvm.github.io) latest
 Installation at Windows:
-1. Download distribution: [default latest version](https://github.com/visualvm/visualvm.src/releases/download/2.0.3/visualvm_203.zip)
+1. Download distribution: [default latest version](https://github.com/oracle/visualvm/releases/download/2.1.7/visualvm_217.zip)
 1. Unpack distribution to folder by your choice (e.g. "C:\Program Files\")
 1. Install plugins "Visual GC", "VisualVM-XXX" and "Tracer-XXX"
 
 - [ ] [IntelliJ IDEA CE](https://www.jetbrains.com/idea/download) latest Community Edition
 Installation at Windows:
-1. Download distribution: [latest Windows Community edition](https://download.jetbrains.com/idea/ideaIC-2020.1.4.exe)
+1. Download distribution: [latest Windows Community edition](https://download-cdn.jetbrains.com/idea/ideaIC-2023.3.2.exe)
 1. Run distribution
 1. All installation questions and options leave as default 
+
+- [ ] [Maven](https://maven.apache.org/download.cgi) latest binary zip Installation at Windows:
+1. Download distribution: [latest Binary zip archive](https://dlcdn.apache.org/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.zip)
+1. Unpack distribution to folder by your choice (e.g. "C:\Program Files")
+1. Remember this path, later we'll refer it as M2_HOME. Or add Windows system variable M2_HOME with value of path to unpacked distribution folder.
+1. Add full path to "bin" subfolder to Windows system PATH variable
+1. Check installation: run "cmd" program and get Maven version mvn --version
 
 - [ ] SSH terminal (for Windows only)
 1. Check if you already have SSH client: 
@@ -48,13 +55,13 @@ Installation at Windows:
 1. try run `ssh -V`
 
 If you don't have pre-installed SSH client, installation [PuTTY for Windows](https://www.chiark.greenend.org.uk/~sgtatham/putty) at Windows:
-1. Download distribution: [MSI Windows Installer 64-bit](https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.74-installer.msi)
+1. Download distribution: [MSI Windows Installer 64-bit](https://the.earth.li/~sgtatham/putty/0.80/w64/putty-64bit-0.80-installer.msi)
 1. Run distribution
 1. All installation questions and options leave as default 
 
 - [ ] [JMeter](https://jmeter.apache.org/download_jmeter.cgi)
 Installation at Windows:
-1. Download distribution: [latest Binary ZIP](https://apache-mirror.rbc.ru/pub/apache//jmeter/binaries/apache-jmeter-5.3.zip)
+1. Download distribution: [latest Binary ZIP](https://dlcdn.apache.org/jmeter/binaries/apache-jmeter-5.6.3.zip)
 1. Unpack distribution to folder by your choice (e.g. "C:\Program Files\")
 1. Remember this path, later we'll refer it as JMETER_HOME. Or add Windows system variable JMETER_HOME with value of path to unpacked distribution folder.   
 1. Add full path to "bin" subfolder to Windows system PATH variable
