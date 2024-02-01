@@ -1,0 +1,13 @@
+# Start demo env
+start:
+    sudo chmod a+rwx prometheus.yml
+    sudo podman login a.r.r
+    sudo podman-compose --file docker-compose.yml up --detach
+
+# Stop demo env and save containers state
+stop:
+    sudo podman-compose --file docker-compose.yml stop
+
+# Shutdown demo env and clear container state
+shutdown:
+    sudo podman-compose --file docker-compose.yml down

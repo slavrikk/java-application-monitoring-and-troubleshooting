@@ -11,6 +11,7 @@
     -Djava.rmi.server.hostname=127.0.0.1 -Dcom.sun.management.jmxremote.port=9999 -Dcom.sun.management.jmxremote.rmi.port=9999 \
     -jar dbo-1.0-SNAPSHOT.jar \
       --spring.profiles.active=qa \
+      --management.metrics.enable.jvm=true \
       --debug=false \
       --logging.level.root=ERROR \
       --logging.level.org.springframework=ERROR \
