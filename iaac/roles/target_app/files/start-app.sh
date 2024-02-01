@@ -6,12 +6,12 @@
     -XX:+IgnoreUnrecognizedVMOptions -XX:+UnlockDiagnosticVMOptions -XX:+UnlockExperimentalVMOptions \
     -XX:ReservedCodeCacheSize=200m \
     -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=heapdump.hprof \
+    -Dmanagement.metrics.enable.jvm=true -Dmanagement.metrics.enable.process=true -Dmanagement.metrics.enable.filesystem=true \
     -Dderby.stream.error.file=log/derby.log \
     -Dcom.sun.management.jmxremote=true -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false \
     -Djava.rmi.server.hostname=127.0.0.1 -Dcom.sun.management.jmxremote.port=9999 -Dcom.sun.management.jmxremote.rmi.port=9999 \
     -jar dbo-1.0-SNAPSHOT.jar \
       --spring.profiles.active=qa \
-      --management.metrics.enable.jvm=true \
       --debug=false \
       --logging.level.root=ERROR \
       --logging.level.org.springframework=ERROR \
