@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   node_exporter:
-    image: prom/node-exporter:v1.4.0 # a.r.r/ext-rbru-techimage-docker/node-exporter:v0.18.1
+    image: prom/node-exporter:v1.4.0 # a.r.r/ext-rbru-techimage-container-docker/prometheus/node-exporter:v1.7.0
     networks:
       - app_monitoring
     ports:
@@ -10,7 +10,7 @@ services:
       - '--path.rootfs=/host'
 
   prometheus:
-    image: prom/prometheus:v2.39.1 # a.r.r/ext-rbru-techimage-docker/prometheus:v2.11.0
+    image: prom/prometheus:v2.39.1 # a.r.r/ext-rbru-techimage-container-docker/prometheus/prometheus:v2.48.0
     networks:
       - app_monitoring
     ports:
@@ -19,7 +19,7 @@ services:
       - './prometheus.yml:/etc/prometheus/prometheus.yml:z'
 
   grafana:
-    image: grafana/grafana:9.2.3 # a.r.r/ext-rbru-techimage-docker/grafana:6.4.3
+    image: grafana/grafana:9.2.3 # a.r.r/ext-rbru-techimage-container-docker/grafana/grafana:10.2.0
     networks:
       - app_monitoring
     ports:
