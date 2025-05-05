@@ -107,15 +107,23 @@ Agenda
 - Parallelism vs Concurrency
 - Typical application design issues
 ## Hands-on research: Threads monitoring and troubleshooting
+- Common Metrics
+- Common Issues
+
+---
 
 ## CPU Profiling
-- Application architecture patterns: What does the CPU doing while running threads?
+- Application architecture patterns: What's the CPU doing while running threads?
 - Profiling: CPU, Memory, IO, sync events, ...
 - Timings: Wall time vs CPU time, method time vs self time, user time vs system time
 - Simple Profiler Tools: JConsole, VisualVM
 - Modern Profiler Tools: async profiler, JMC
 - Typical application design issues
 ## Hands-on research: Application workload monitoring and profiling
+- Common Metrics
+- Common Issues
+
+---
 
 ## JVM IO Monitoring and Troubleshooting
 - Application architecture patterns: where does the IO happen?
@@ -123,6 +131,10 @@ Agenda
 - IO architecture patterns: Connection Pools
 - Typical application design issues
 ## Hands-on research: HTTP connections and DB connections monitoring, profiling and troubleshooting
+- Common Metrics
+- Common Issues
+
+---
 
 ## JVM Memory Monitoring and Troubleshooting
 - Application architecture patterns: when and where does the memory allocation happen?
@@ -134,12 +146,19 @@ Agenda
 - Core GC algorithms
 - Off-heap memory and its structure
 ## Hands-on research: Application Memory monitoring, profiling and troubleshooting
+- Common Metrics
+- Common Issues
+
+---
 
 ## Persistence Monitoring and Troubleshooting
 - Application architecture patterns: persistence layer
 - JDBC subsystem architecture
 - DB Connection pooling
 - JPA architecture
-- JPA Caching
-- Spring Data
+- JPA Caching Level(s)
+- Spring Data Repositories
+- Typical data access issues
 ## Hands-on research: Application Persistence monitoring, profiling and troubleshooting
+- Common Metrics
+- Common Issues
