@@ -531,9 +531,9 @@ free -m
 
 ps -ef
 ps -eaux --forest
-ps -eT | grep <pid>
+ps -eT | grep <pid> // вытащить pid по id
 
-top + 'q'
+top + 'q' // мониторинг
 top + 'f'
 top -p <pid>
 top -H -p <pid>
