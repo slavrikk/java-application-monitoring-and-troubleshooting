@@ -526,13 +526,14 @@ uname --all
 cat /etc/os-release
 uptime
 
-df -ah
+df -ah  //команда для просмотра памяти
 free -m
 
-ps -ef
+ps -ef  // все процессы на пк
 ps -eaux --forest
-ps -eT | grep <pid>
+ps -eT | grep <pid> вытащить по процессу/имени
 
+// на mac os не работает
 top + 'q'
 top + 'f'
 top -p <pid>
@@ -543,11 +544,12 @@ iostat 1 [-xm]
 pidstat 1
 netstat 1 [-tulnp]
 
-jps [-lvm]
+// команды для анализа jvm процессов:
+jps [-lvm]  // сколько jvm процессов запущено
 jcmd <pid> help
-jcmd <pid> VM.uptime
+jcmd <pid> VM.uptime // время работы jvm
 jcmd <pid> VM.system_properties
-jcmd <pid> VM.flags
+jcmd <pid> VM.flags // посмотреть все флаги текущей jvm
 jcmd <pid> PerfCounter.print
 jcmd <pid> GC.heap_info
 jcmd <pid> GC.finalizer_info
