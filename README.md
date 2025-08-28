@@ -685,6 +685,7 @@ jinfo -flag CompileThreshold <pid> # _compile_ threshold applies only when stand
 jinfo -flag Tier3InvocationThreshold <pid> # _invocation_ threshold applies when tiered compilation: -XX:+TieredCompilation
 jinfo -flag Tier4InvocationThreshold <pid> # _invocation_ threshold applies when tiered compilation: -XX:+TieredCompilation
 
+// команды дл анализа jit
 jstat -compiler <pid>
 jstat -printcompilation <pid> [1000]
 jstat -snap <pid> -J-Djstat.showUnsupported=true | grep .ci.
